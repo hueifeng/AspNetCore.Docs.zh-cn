@@ -43,9 +43,9 @@ GC 分配堆段，其中每个段都是一系列连续的内存。 位于堆中�
 
 出于性能方面的原因，上述内存分配已完成。 性能优势来自连续内存中的堆段。
 
-### <a name="call-gccollect"></a>调用 GC。收集
+### <a name="call-gccollect"></a>调用 GC.Collect
 
-调用[GC。显式收集](xref:System.GC.Collect*)：
+调用[调用显式GC.Collect](xref:System.GC.Collect*)：
 
 * **不**应由生产 ASP.NET Core 应用完成。
 * 调查内存泄漏时非常有用。
@@ -56,7 +56,7 @@ GC 分配堆段，其中每个段都是一系列连续的内存。 位于堆中�
 专用工具可帮助分析内存使用量：
 
 - 计算对象引用数
-- 度量 GC 对 CPU 使用的影响程度
+- 测量 GC 对 CPU 使用的影响程度
 - 测量每代使用的内存空间
 
 使用以下工具分析内存使用量：
